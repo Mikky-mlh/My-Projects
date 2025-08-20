@@ -1,6 +1,3 @@
-
-num = input("Enter a number in words: ")
-
 def word_to_num(word):
     units = {
         "zero": 0, "one": 1, "two": 2, "three": 3, "four": 4,
@@ -22,14 +19,6 @@ def word_to_num(word):
         return teens[word]
     elif word in tens:
         return tens[word]
-    elif word.endswith(" hundred"):
-        return word_to_num(num) + "00"
-    elif word.endswith(" thousand"):
-        return 1000
-    elif word.endswith(" million"):
-        return 1000000
-    elif word.endswith(" billion"):
-        return 1000000000
     else:
         # Handle complex numbers like "twenty one" or "one hundred twenty three"
         parts = word.split()
@@ -49,4 +38,5 @@ def word_to_num(word):
                 num *= 1000000000
         return num
 
+num = input("Enter a number in words: ")
 print(word_to_num(num))
