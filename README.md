@@ -1,0 +1,1 @@
+This is my project place where I will be uploading my Python projects. You can access and give feedback on mine. I am new to coding so I have started from very basics and will slowly increase my level😄
